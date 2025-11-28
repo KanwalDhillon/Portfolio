@@ -3,101 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kanwalfolio</title>
+  <title>Kanwal | Creative Designer</title>
   <link rel="stylesheet" href="style.css">
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
   <!-- Navbar -->
   <header class="navbar">
-    <div class="logo">Portfolio</div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <!-- UPDATED: Changed Logo Text -->
+    <div class="logo">Portfolio<span>.</span></div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Work</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a href="cv.pdf" class="btn">Download CV</a>
+    <a href="resume/Kanwalpreet-Kaur-Dhillon-Resume-main2.pdf" class="btn-resume" download>Resume <i class="fas fa-download"></i></a>
   </header>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="hero-left">
-      <h1>Hello, I’m <span>Kanwal</span></h1>
-      <p>A passionate designer & developer who loves creating user-friendly and modern websites.</p>
-      <a href="#portfolio" class="btn hero-btn">View My Work</a>
+    
+    <!-- Image on the Left with Background Blob -->
+    <div class="hero-img-container">
+      <div class="blob-bg"></div> <!-- New decorative blob -->
+      <img src="k1.jpeg" alt="Kanwal Profile Picture" class="hero-img">
     </div>
-    <div class="hero-right">
-      <img src="k1.jpeg" alt="Profile Picture">
+
+    <!-- Text on the Right -->
+    <div class="hero-content">
+      <span class="hero-badge">Creative Designer</span>
+      <h1>Bringing Ideas to <br><span>Visual Life.</span></h1>
+      <p>I am a designer & developer who builds clean, creative, and user-friendly digital experiences. Expert in Figma, Adobe Suite, and Frontend Code.</p>
+      
+      <div class="cta-group">
+        <a href="#portfolio" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-resume" style="background:transparent; color:#333; border:1px solid #ddd;">Contact Me</a>
+      </div>
     </div>
+
   </section>
 
   <!-- About Section -->
   <section id="about" class="about">
-    <div class="about-card"></div>
-    <div class="about-text">
-      <h2>Need Creative Design?</h2>
-      <p>I CAN HELP YOU!</p>
-      <hr>
-      <p>With expertise in UI/UX and web development, I design modern, responsive, and engaging websites that bring ideas to life.</p>
+    <div class="section-header">
+      <h2>About Me</h2>
     </div>
-    <div class="about-card"></div>
+
+    <div class="about-grid">
+      <!-- Left: Text -->
+      <div class="about-text">
+        <p>
+          <strong>Hi, I'm Kanwal.</strong> I have a passion for turning complex problems into simple, beautiful designs.
+        </p>
+        <p>
+          With a background in both design arts and technology, I understand how to make things look good and work well. I specialize in <strong>Editorial Design</strong> and <strong>Web Interfaces</strong>.
+        </p>
+        <p>
+          When I'm not designing in Figma or coding in VS Code, I'm exploring new layout trends and improving my craft.
+        </p>
+      </div>
+
+      <!-- Right: Skills -->
+      <div class="skills-wrapper">
+        <h3>My Toolkit</h3>
+        
+        <div class="skill-category">
+          <span class="skill-title"><i class="fas fa-pencil-ruler"></i> Design</span>
+          <div class="skill-tags">
+            <span class="tag">Figma</span>
+            <span class="tag">Adobe Photoshop</span>
+            <span class="tag">Adobe Illustrator</span>
+            <span class="tag">InDesign</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <span class="skill-title"><i class="fas fa-code"></i> Development</span>
+          <div class="skill-tags">
+            <span class="tag">VS Code</span>
+            <span class="tag">HTML5/CSS3</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">WordPress</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
 
   <!-- Portfolio Section -->
-<section id="portfolio" class="portfolio">
-  <h2>My Projects</h2>
-  <div class="portfolio-grid">
+  <section id="portfolio" class="portfolio">
+    <div class="section-header">
+      <h2>Selected Works</h2>
+    </div>
 
-    <!-- Project 1 -->
-    <a href="https://www.figma.com/design/ueKKGWCNTMx5a0JwkDJmp5/Wireframe-for-comp-350-Ridgeline?node-id=19-382&t=jdGdLkEd5HSHPXhY-1" class="project">
-      <img src="ridgeline.png" alt="Ridgeline Project Screenshot">
-      <h3>Ridgeline</h3>
-      <p>
-        An e-commerce website design concept for a clothing brand, showcasing 
-        products with a modern and stylish layout.
-      </p>
-      <p><strong>My Role:</strong> Designed the UI/UX using Figma, focusing on clean visuals, 
-      easy navigation, and an engaging shopping experience.</p>
-    </a>
+    <div class="portfolio-grid">
 
-    <!-- Project 2 -->
-    <a href="https://www.figma.com/design/Otpisvkd6M0BIFLrEMwLyP/Sportiator?node-id=0-1&t=Etj7ktpE66AnikUB-1" class="project">
-      <img src="sportiator.jpeg" alt="Sportiator Screenshot">
-      <h3>Sportiator</h3>
-      <p>
-        A golf tournament website designed to share event details, schedules, and updates.
-      </p>
-      <p><strong>My Role:</strong> Designed the UI/UX in Figma and developed the site in WordPress, 
-      focusing on a clean, responsive, and user-friendly experience.</p>
-    </a>
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="card-image">
+          <img src="ridgeline.png" alt="Ridgeline Project">
+        </div>
+        <div class="card-info">
+          <h3>Ridgeline Clothing</h3>
+          <p>Modern e-commerce UI design focusing on user experience and retail conversion.</p>
+          <a href="https://www.figma.com/design/ueKKGWCNTMx5a0JwkDJmp5/Wireframe-for-comp-350-Ridgeline" target="_blank" class="project-link">View Design <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
 
-    <!-- Project 3 -->
-    <a href="https://www.figma.com/design/1Yk1vf5OVoMRf6LDS2EB1B/Volunteer?node-id=0-1&t=5YzsjbbciCqSiApY-1" class="project">
-      <img src="volunteering.png" alt="Volunteering Screenshot">
-      <h3>Volunteering</h3>
-      <p>
-        A platform where people can offer opportunities or participate in volunteering events, 
-        both paid and unpaid.
-      </p>
-      <p><strong>My Role:</strong> Researched user needs and existing platforms to shape features and 
-      provide insights for the website design.</p>
-    </a>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="card-image">
+          <img src="sportiator.jpeg" alt="Sportiator">
+        </div>
+        <div class="card-info">
+          <h3>Sportiator</h3>
+          <p>Tournament website design and branding. Created primarily using Figma and Adobe Suite.</p>
+          <a href="https://www.figma.com/design/Otpisvkd6M0BIFLrEMwLyP/Sportiator" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
 
-  </div>
-</section>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="card-image">
+          <img src="volunteering.png" alt="Volunteering">
+        </div>
+        <div class="card-info">
+          <h3>Volunteer Hub</h3>
+          <p>Community connection platform. Features a clean, accessible layout for all ages.</p>
+          <a href="https://www.figma.com/design/1Yk1vf5OVoMRf6LDS2EB1B/Volunteer" target="_blank" class="project-link">View Prototype <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
-    <h2>Get In Touch</h2>
-    <p>If you’d like to work together, feel free to reach out!</p>
-    <a href="mailto:your@email.com" class="btn">Say Hello</a>
+    <h2>Let's Work Together</h2>
+    <p>Have a project in mind? I'd love to hear about it.</p>
+    <a href="mailto:kanwaldhillon.9cis@gmail.com" class="btn-primary">Say Hello</a>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Kanwalfolio | Designed with ❤️</p>
+    <div class="footer-content">
+      <div class="footer-left">
+        <h3>Portfolio<span>.</span></h3> <!-- Updated Footer Logo too -->
+        <p>A dedicated designer and developer crafting beautiful digital experiences. Always aiming higher.</p>
+      </div>
+      
+      <div class="footer-right">
+        <h4>Connect Info</h4>
+        <div class="contact-list">
+          <a href="mailto:kanwaldhillon.9cis@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i> kanwaldhillon.9cis@gmail.com
+          </a>
+          <a href="tel:+16725884722" class="contact-item">
+            <i class="fas fa-phone"></i> 672-588-4722
+          </a>
+          <a href="https://github.com/KanwalDhillon" target="_blank" class="contact-item">
+            <i class="fab fa-github"></i> github.com/KanwalDhillon
+          </a>
+          <a href="https://www.linkedin.com/in/kanwaldhillon29" target="_blank" class="contact-item">
+            <i class="fab fa-linkedin"></i> linkedin.com/in/kanwaldhillon29
+          </a>
+        </div>                    
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Creative Portfolio. All Rights Reserved.</p>
+    </div>
   </footer>
+
 </body>
 </html>
